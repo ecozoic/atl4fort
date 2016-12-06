@@ -1,0 +1,21 @@
+{
+  "presets": [
+    ["es2015", { "modules": false }],
+    "react",
+    "stage-2"
+  ],
+  "env": {
+    "development": {
+      "plugins": ["react-hot-loader/babel"]
+    },
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    },
+    "e2e": {
+      "plugins": [
+        "add-module-exports",
+        "transform-es2015-modules-commonjs"
+      ]
+    }
+  }
+}
