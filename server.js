@@ -3,6 +3,7 @@ const koa = require('koa');
 const compress = require('koa-compress');
 const favicon = require('koa-favicon');
 const logger = require('koa-logger');
+const mount = require('koa-mount');
 const send = require('koa-send');
 const serve = require('koa-static');
 
@@ -14,12 +15,14 @@ app.use(favicon(`${__dirname}/dist/favicon.ico`));
 
 app.use(logger());
 
-app.use(serve('./dist', {
-  maxage: 365 * 24 * 60 * 60 * 1000 // 1 year in ms
-}));
+app.use(mount('/assets', serve('dist/assets', {
+  maxage: 365 * 24 * 60 * 60 * 1000
+})));
 
 app.use(function*() {
-  yield send(this, 'dist/index.html');
+  yield send(this, 'dist/index.html', {
+    maxage: 0
+  });
 });
 
 const port = process.env.PORT || 8080;
