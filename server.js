@@ -1,6 +1,8 @@
 const koa = require('koa');
 
 const compress = require('koa-compress');
+const conditional = require('koa-conditional-get');
+const etag = require('koa-etag');
 const favicon = require('koa-favicon');
 const logger = require('koa-logger');
 const mount = require('koa-mount');
@@ -14,6 +16,9 @@ app.use(compress());
 app.use(favicon(`${__dirname}/dist/favicon.ico`));
 
 app.use(logger());
+
+app.use(conditional());
+app.use(etag());
 
 app.use(mount('/assets', serve('dist/assets', {
   maxage: 365 * 24 * 60 * 60 * 1000
