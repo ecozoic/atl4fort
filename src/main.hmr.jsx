@@ -7,6 +7,8 @@ import { Provider } from 'react-redux';
 import { AppContainer } from 'react-hot-loader';
 import { DevTools } from './app/containers/dev-tools';
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
 import { App } from './app';
 import { rootReducer } from './app/reducers';
 
@@ -15,6 +17,8 @@ import './main.scss';
 
 // favicon
 import './favicon.ico';
+
+injectTapEventPlugin();
 
 const store = createStore(rootReducer, DevTools.instrument());
 

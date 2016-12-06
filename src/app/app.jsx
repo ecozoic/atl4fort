@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Match, Miss } from 'react-router';
 
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 import { Home } from './components/home';
 import { PageNotFound } from './components/page-not-found';
 
@@ -15,12 +17,14 @@ export class App extends Component {
    */
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <Match exactly pattern='/' component={Home} />
-          <Miss component={PageNotFound} />
-        </div>
-      </BrowserRouter>
+      <MuiThemeProvider>
+        <BrowserRouter>
+          <div>
+            <Match exactly pattern='/' component={Home} />
+            <Miss component={PageNotFound} />
+          </div>
+        </BrowserRouter>
+      </MuiThemeProvider>
     );
   }
 }
