@@ -14,8 +14,9 @@ app.use(favicon(`${__dirname}/dist/favicon.ico`));
 
 app.use(logger());
 
-// TODO: caching
-app.use(serve('./dist'));
+app.use(serve('./dist', {
+  maxage: 365 * 24 * 60 * 60 * 1000 // 1 year in ms
+}));
 
 app.use(function*() {
   yield send(this, 'dist/index.html');
