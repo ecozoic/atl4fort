@@ -1,0 +1,35 @@
+$header-height: 80px;
+$light-gray: #eee;
+$white: #fff;
+
+.header {
+  background: $white;
+  border-bottom: 1px solid $light-gray;
+  height: $header-height;
+  margin-bottom: 24px;
+  padding: 0 4%;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  .logo {
+    float: left;
+    height: $header-height;
+    line-height: $header-height;
+
+    img {
+      height: $header-height;
+      line-height: $header-height;
+      margin-right: 8px;
+      width: 40px;
+    }
+
+    span {
+      float: right;
+      font-size: 16px;
+      height: $header-height;
+      line-height: $header-height;
+      text-transform: uppercase;
+    }
+  }
+}
