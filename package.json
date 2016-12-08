@@ -36,7 +36,7 @@
     "babel-core": "6.18.2",
     "babel-eslint": "7.1.1",
     "babel-jest": "17.0.2",
-    "babel-loader": "6.2.8",
+    "babel-loader": "6.2.9",
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-transform-es2015-modules-commonjs": "6.18.0",
     "babel-preset-es2015": "6.18.0",
@@ -56,7 +56,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "17.0.3",
     "jsdoc": "3.4.3",
-    "jsdoc-babel": "0.2.1",
+    "jsdoc-babel": "0.3.0",
     "nightwatch": "0.9.9",
     "node-sass": "3.13.0",
     "postcss-cssnext": "2.9.0",
@@ -69,7 +69,7 @@
     "selenium-standalone": "5.9.0",
     "style-loader": "0.13.1",
     "webpack": "2.1.0-beta.27",
-    "webpack-dev-server": "2.1.0-beta.11",
+    "webpack-dev-server": "2.1.0-beta.12",
     "webpack-merge": "1.0.2"
   },
   "dependencies": {
