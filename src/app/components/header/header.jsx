@@ -6,7 +6,7 @@ import styles from './header.scss';
 
 import { Row, Col, Menu, Popover } from 'antd';
 
-import logo from '../../../images/fort-logo.jpg';
+import logo from '../../../images/fort-logo-transparent.png';
 
 /**
  * Header component.
@@ -35,40 +35,40 @@ export class Header extends Component {
   render() {
     const { menuMode } = this.state;
 
-    const menu = [
-      <Menu mode={menuMode} className={styles.nav} key='nav'>
-        <Menu.Item key='facebook'>
+    const menu = (
+      <Menu mode={menuMode} className={styles.nav}>
+        <Menu.Item>
           <a href='https://www.facebook.com/atl4fort'>
             <i className='fa fa-facebook'></i>
           </a>
         </Menu.Item>
-        <Menu.Item key='twitter'>
+        <Menu.Item>
           <a href='https://twitter.com/atl4fort'>
             <i className='fa fa-twitter'></i>
           </a>
         </Menu.Item>
-        <Menu.Item key='instagram'>
+        <Menu.Item>
           <a href='https://www.instagram.com/atl4fort'>
             <i className='fa fa-instagram'></i>
           </a>
         </Menu.Item>
-        <Menu.Item key='github'>
+        <Menu.Item>
           <a href='https://github.com/ecozoic/atl4fort'>
             <i className='fa fa-github'></i>
           </a>
         </Menu.Item>
       </Menu>
-    ];
+    );
 
-    const popover = [
+    const popover = (
       <Popover overlayClassName={styles.popoverMenu}
                placement='bottomRight'
                content={menu}
                trigger='click'
                arrowPointAtCenter>
-        <i className={`${styles.navIcon } fa fa-bars`} key='icon'></i>
+        <i className={`${styles.navIcon } fa fa-bars`}></i>
       </Popover>
-    ];
+    );
 
     return (
       <header className={styles.header}>

@@ -2,11 +2,12 @@
 @import '../../../mixins';
 
 $header-height: 80px;
+$whitish: rgba(255, 255, 255, .9);
 
 .header {
   @include clearfix;
 
-  background: $white;
+  background: $whitish;
   border-bottom: 1px solid $light-gray;
   height: $header-height;
   margin-bottom: 24px;
@@ -17,12 +18,12 @@ $header-height: 80px;
 
   .logo {
     float: left;
-    height: $header-height - 1;
-    line-height: $header-height - 1;
+    height: $header-height;
+    line-height: $header-height;
 
     img {
-      height: $header-height - 1;
-      line-height: $header-height - 1;
+      height: $header-height;
+      line-height: $header-height;
       margin-right: 8px;
       width: 80px;
     }
@@ -37,6 +38,7 @@ $header-height: 80px;
   }
 
   .nav {
+    background: transparent !important;
     border: 0;
     float: right;
     font-size: 14px;

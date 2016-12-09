@@ -2,8 +2,12 @@
 
 .hero {
   @include page;
-  background: url('../../../images/fort-for-atl.jpg') no-repeat center / cover;
+  align-items: center;
+  background: url('../../../images/fort-march-for-15.jpg') no-repeat center / cover;
+  display: flex;
+  justify-content: flex-start;
   overflow: hidden;
+  padding-left: 100px;
   position: relative;
   width: 100%;
 }
