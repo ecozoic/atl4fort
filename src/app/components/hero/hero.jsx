@@ -13,9 +13,8 @@ export class Hero extends Component {
    */
   render() {
     return (
-      <div className={styles.hero}>
-        <h1>Hero</h1>
-      </div>
+      <section className={styles.hero}>
+      </section>
     );
   }
 }

@@ -6,6 +6,8 @@ import styles from './header.scss';
 
 import { Row, Col, Menu, Popover } from 'antd';
 
+import logo from '../../../images/fort-logo.jpg';
+
 /**
  * Header component.
  * @extends React.Component
@@ -74,8 +76,8 @@ export class Header extends Component {
         <Row>
           <Col lg={4} md={6} sm={24} xs={24}>
             <Link to={'/'} className={styles.logo}>
-              <img alt='logo' src='https://t.alipayobjects.com/images/rmsweb/T1B9hfXcdvXXXXXXXX.svg' />
-              <span>ATL 4 Fort</span>
+              <img alt='logo' src={logo} />
+              <span>Vincent Fort For Mayor</span>
             </Link>
           </Col>
           <Col lg={20} md={18} sm={17} xs={0}>
