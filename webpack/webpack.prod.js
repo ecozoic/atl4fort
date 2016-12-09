@@ -55,7 +55,7 @@ module.exports = {
         warnings: false
       }
     }),
-    extractApp,
-    extractAntd
+    extractAntd,
+    extractApp
   ]
 };
