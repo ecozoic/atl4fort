@@ -1,11 +1,34 @@
 $white: #fff;
+$blue: #108ee9;
+$red: #ea504e;
 
 .bio {
   background: $white;
-  height: 100vh;
+  //height: 100vh;
   margin: auto;
   max-width: 1500px;
-  min-height: 700px;
+  min-height: 100vh;
   overflow: hidden;
   width: 100%;
+
+  h2 {
+    border-bottom: 1px solid $red;
+    color: $blue;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    max-width: 400px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 24px;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 40px;
+  }
 }

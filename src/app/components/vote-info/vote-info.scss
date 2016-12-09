@@ -1,4 +1,6 @@
 $white: #fff;
+$blue: #108ee9;
+$red: #ea504e;
 
 .vote-info {
   background: $white;
@@ -8,4 +10,44 @@ $white: #fff;
   min-height: 700px;
   overflow: hidden;
   width: 100%;
+
+  h2 {
+    border-bottom: 1px solid $red;
+    color: $blue;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    max-width: 400px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 24px;
+    margin: auto;
+    max-width: 800px;
+    padding-top: 40px;
+  }
+
+  .buttons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    max-width: 500px;
+
+    button {
+      font-size: 16px;
+      margin: 10px;
+      padding: 16px;
+      width: 200px;
+
+      i {
+        font-weight: 400;
+        margin-right: 10px;
+      }
+    }
+  }
 }

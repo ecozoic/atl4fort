@@ -1,4 +1,7 @@
 $white: #fff;
+$blue: #108ee9;
+$red: #ea504e;
+// $blue: #2f7abe
 
 .platform {
   background: $white;
@@ -8,4 +11,35 @@ $white: #fff;
   min-height: 700px;
   overflow: hidden;
   width: 100%;
+
+  h2 {
+    border-bottom: 1px solid $red;
+    color: $blue;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    max-width: 400px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  ul {
+    margin: auto;
+    max-width: 800px;
+    padding-top: 24px;
+  }
+
+  li {
+    font-size: 24px;
+    max-width: 800px;
+    padding: 16px 0;
+  }
+
+  i {
+    color: $blue;
+    margin-right: 20px;
+  }
 }
