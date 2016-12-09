@@ -1,8 +1,11 @@
-.bio {
-  height: 100vh;
-  min-height: 700px;
+$white: #fff;
 
-  h1 {
-    font-size: 20px;
-  }
+.bio {
+  background: $white;
+  height: 100vh;
+  margin: auto;
+  max-width: 1500px;
+  min-height: 700px;
+  overflow: hidden;
+  width: 100%;
 }
