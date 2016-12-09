@@ -4,9 +4,9 @@ $white: #fff;
 
 .header {
   background: $white;
+  border-bottom: 1px solid $light-gray;
   height: $header-height;
   margin-bottom: 24px;
-  opacity: .95;
   padding: 0 4%;
   position: fixed;
   width: 100%;
@@ -21,12 +21,12 @@ $white: #fff;
 
   .logo {
     float: left;
-    height: $header-height;
-    line-height: $header-height;
+    height: $header-height - 1;
+    line-height: $header-height - 1;
 
     img {
-      height: $header-height;
-      line-height: $header-height;
+      height: $header-height - 1;
+      line-height: $header-height - 1;
       margin-right: 8px;
       width: 80px;
     }

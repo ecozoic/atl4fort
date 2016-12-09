@@ -39,22 +39,22 @@ export class Header extends Component {
       <Menu mode={menuMode} className={styles.nav} key='nav'>
         <Menu.Item key='facebook'>
           <a href='https://www.facebook.com/atl4fort'>
-            <i className='fa fa-facebook fa-2x'></i>
+            <i className='fa fa-facebook'></i>
           </a>
         </Menu.Item>
         <Menu.Item key='twitter'>
           <a href='https://twitter.com/atl4fort'>
-            <i className='fa fa-twitter fa-2x'></i>
+            <i className='fa fa-twitter'></i>
           </a>
         </Menu.Item>
         <Menu.Item key='instagram'>
           <a href='https://www.instagram.com/atl4fort'>
-            <i className='fa fa-instagram fa-2x'></i>
+            <i className='fa fa-instagram'></i>
           </a>
         </Menu.Item>
         <Menu.Item key='github'>
           <a href='https://github.com/ecozoic/atl4fort'>
-            <i className='fa fa-github fa-2x'></i>
+            <i className='fa fa-github'></i>
           </a>
         </Menu.Item>
       </Menu>
