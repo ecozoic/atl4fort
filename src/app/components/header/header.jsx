@@ -17,6 +17,35 @@ export class Header extends Component {
     menuMode: 'horizontal'
   };
 
+  setScrollEvent() {
+    let lastKnownScrollY = 0;
+    let ticking = false;
+
+    const toggleHeaderClass = (scrollY) => {
+      const header = this.node;
+
+      if (scrollY > 0) {
+        header.className = header.className.replace(styles.dark, '');
+      } else {
+        if (header.className.indexOf(styles.dark) < 0) {
+          header.className += `${styles.dark}`;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', function() {
+      lastKnownScrollY = window.scrollY;
+
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          toggleHeaderClass(lastKnownScrollY);
+          ticking = false;
+        });
+      }
+      ticking = true;
+    });
+  }
+
   componentDidMount() {
     require('enquire.js')
       .register('only screen and (min-width: 320px) and (max-width: 940px)', {
@@ -27,6 +56,8 @@ export class Header extends Component {
           this.setState({ menuMode: 'horizontal' });
         }
       });
+
+      this.setScrollEvent();
   }
 
   /**
@@ -71,7 +102,7 @@ export class Header extends Component {
     );
 
     return (
-      <header className={styles.header}>
+      <header id='header' className={styles.header + ' ' + styles.dark} ref={node => this.node = node}>
         { menuMode === 'inline' ? popover : null }
         <Row>
           <Col lg={8} md={10} sm={24} xs={24}>

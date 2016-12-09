@@ -3,6 +3,7 @@
 
 $header-height: 80px;
 $whitish: rgba(255, 255, 255, .9);
+$blackish: rgba(17, 17, 17, .9);
 
 .header {
   @include clearfix;
@@ -13,8 +14,18 @@ $whitish: rgba(255, 255, 255, .9);
   margin-bottom: 24px;
   padding: 0 4%;
   position: fixed;
+  transition: border .5s cubic-bezier(.455, .03, .515, .955), background .5s cubic-bezier(.455, .03, .515, .955);
   width: 100%;
   z-index: 999;
+
+  &.dark {
+    background: $blackish;
+    border-bottom: 1px solid $blackish;
+
+    a {
+      color: $white;
+    }
+  }
 
   .logo {
     float: left;
@@ -29,6 +40,7 @@ $whitish: rgba(255, 255, 255, .9);
     }
 
     span {
+      color: $blue;
       float: right;
       font-size: 16px;
       height: $header-height;
