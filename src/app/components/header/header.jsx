@@ -61,7 +61,7 @@ export class Header extends Component {
     ];
 
     const popover = [
-      <Popover overlayClassName='popover-menu'
+      <Popover overlayClassName={styles.popoverMenu}
                placement='bottomRight'
                content={menu}
                trigger='click'
@@ -74,13 +74,13 @@ export class Header extends Component {
       <header className={styles.header}>
         { menuMode === 'inline' ? popover : null }
         <Row>
-          <Col lg={4} md={6} sm={24} xs={24}>
+          <Col lg={8} md={10} sm={24} xs={24}>
             <Link to={'/'} className={styles.logo}>
               <img alt='logo' src={logo} />
               <span>Vincent Fort For Mayor</span>
             </Link>
           </Col>
-          <Col lg={20} md={18} sm={17} xs={0}>
+          <Col lg={16} md={14} sm={17} xs={0}>
             { menuMode === 'horizontal' ? menu : null }
           </Col>
         </Row>
