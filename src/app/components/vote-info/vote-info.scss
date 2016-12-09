@@ -1,44 +1,20 @@
-$white: #fff;
-$blue: #108ee9;
-$red: #ea504e;
+@import '../../../theme';
+@import '../../../mixins';
 
 .vote-info {
-  background: $white;
-  height: 100vh;
-  margin: auto;
-  max-width: 1500px;
-  min-height: 700px;
-  overflow: hidden;
-  width: 100%;
+  @include page;
+  @include content;
 
   h2 {
-    border-bottom: 1px solid $red;
-    color: $blue;
-    font-family: 'Roboto Slab', serif;
-    font-size: 36px;
-    font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    max-width: 400px;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 24px;
-    margin: auto;
-    max-width: 800px;
-    padding-top: 40px;
+    @include header;
   }
 
   .buttons {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 60px;
-    max-width: 500px;
+    text-align: center;
 
-    button {
+    .button {
+      @include button;
       font-size: 16px;
       margin: 10px;
       padding: 16px;
@@ -48,6 +24,39 @@ $red: #ea504e;
         font-weight: 400;
         margin-right: 10px;
       }
+    }
+  }
+
+  .hashtag {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    max-width: 800px;
+    padding-top: 40px;
+    text-align: center;
+
+    i {
+      color: $red;
+      font-weight: 400;
+    }
+
+    span {
+      color: $blue;
+    }
+  }
+
+  .table {
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 800px;
+
+    table {
+      width: 100%;
     }
   }
 }

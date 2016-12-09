@@ -1,7 +1,8 @@
+@import '../../../mixins';
+
 .hero {
+  @include page;
   background: url('../../../images/fort-for-atl.jpg') no-repeat center / cover;
-  height: 100vh;
-  min-height: 700px;
   overflow: hidden;
   position: relative;
   width: 100%;

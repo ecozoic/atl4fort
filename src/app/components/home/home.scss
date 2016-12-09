@@ -1,7 +1,7 @@
-$gray: #ececec;
+@import '../../../theme';
 
 .home {
-  background: $gray;
+  background: $light-gray-2;
 
   .wrapper {
     background: transparent;

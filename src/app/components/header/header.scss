@@ -1,8 +1,11 @@
+@import '../../../theme';
+@import '../../../mixins';
+
 $header-height: 80px;
-$light-gray: #eee;
-$white: #fff;
 
 .header {
+  @include clearfix;
+
   background: $white;
   border-bottom: 1px solid $light-gray;
   height: $header-height;
@@ -11,13 +14,6 @@ $white: #fff;
   position: fixed;
   width: 100%;
   z-index: 999;
-  zoom: 1;
-
-  &::before,
-  &::after {
-    content: '';
-    display: table;
-  }
 
   .logo {
     float: left;

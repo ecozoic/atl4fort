@@ -1,0 +1,80 @@
+@import './theme';
+
+@mixin clearfix {
+  zoom: 1;
+
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+}
+
+@mixin button {
+  background-color: $blue;
+  background-image: none;
+  border: 1px solid transparent;
+  border-color: $blue;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0;
+  outline: 0;
+  padding: 4px 15px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  user-select: none;
+  white-space: nowrap;
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: $light-blue;
+    border-color: $light-blue;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+    color: $white;
+    transition: none;
+  }
+}
+
+@mixin header {
+  border-bottom: 1px solid $red;
+  color: $blue;
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  max-width: 400px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+@mixin page {
+  height: 100vh;
+  min-height: 700px;
+}
+
+@mixin content {
+  background: $white;
+  margin: auto;
+  max-width: 1500px;
+  overflow: hidden;
+  width: 100%;
+}
