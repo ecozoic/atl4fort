@@ -40,7 +40,7 @@ module.exports = {
         test: /\.s?(a|c)ss$/,
         loader: extractAntd.extract({
           fallbackLoader: 'style-loader',
-          loader: 'css-loader'
+          loader: 'css-loader&minimize'
         }),
         include: path.resolve(__dirname, '../node_modules/antd')
       }
