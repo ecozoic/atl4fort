@@ -2,6 +2,14 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const extractApp = new ExtractTextPlugin({
+  filename: 'assets/[name].[hash].css'
+});
+
+const extractAntd = new ExtractTextPlugin({
+  filename: 'assets/antd.[hash].css'
+});
+
 module.exports = {
   entry: {
     polyfills: './src/polyfills',
@@ -22,10 +30,19 @@ module.exports = {
     rules: [
       {
         test: /\.s?(a|c)ss$/,
-        loader: ExtractTextPlugin.extract({
+        loader: extractApp.extract({
           fallbackLoader: 'style-loader',
           loader: 'css-loader?importLoaders=2&minimize&modules&camelCase!postcss-loader!sass-loader'
-        })
+        }),
+        exclude: /node_modules/
+      },
+      {
+        test: /\.s?(a|c)ss$/,
+        loader: extractAntd.extract({
+          fallbackLoader: 'style-loader',
+          loader: 'css-loader'
+        }),
+        include: path.resolve(__dirname, '../node_modules/antd')
       }
     ]
   },
@@ -38,8 +55,7 @@ module.exports = {
         warnings: false
       }
     }),
-    new ExtractTextPlugin({
-      filename: 'assets/[name].[hash].css'
-    })
+    extractApp,
+    extractAntd
   ]
 };

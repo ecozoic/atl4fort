@@ -4,6 +4,9 @@
     "react",
     "stage-2"
   ],
+  "plugins": [
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ],
   "env": {
     "development": {
       "plugins": ["react-hot-loader/babel"]

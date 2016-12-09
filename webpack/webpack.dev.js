@@ -33,7 +33,16 @@ module.exports = {
           'css-loader?modules&importLoaders=2&camelCase',
           'postcss-loader',
           'sass-loader'
-        ]
+        ],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.s?(a|c)ss$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ],
+        include: path.resolve(__dirname, '../node_modules/antd')
       }
     ]
   },
