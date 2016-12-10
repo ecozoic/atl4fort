@@ -1,5 +1,13 @@
 @import './theme';
 
+$mobile: 'only screen and (min-width: 320px) and (max-width: 940px)';
+
+@mixin mobile {
+  @media #{$mobile} {
+    @content;
+  }
+}
+
 @mixin clearfix {
   zoom: 1;
 
@@ -61,7 +69,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
-  max-width: 400px;
+  max-width: 500px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -78,4 +86,9 @@
   max-width: 1500px;
   overflow: hidden;
   width: 100%;
+
+  @include mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

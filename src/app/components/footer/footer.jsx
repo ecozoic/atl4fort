@@ -42,6 +42,30 @@ export class Footer extends Component {
               </a>
             </div>
           </li>
+          <li>
+            <h2>Campaign</h2>
+            <div>
+              <a href='https://vincentfort.com/'>
+                <span>Official Site</span>
+              </a>
+            </div>
+            <div>
+              <a href='https://registertovote.sos.ga.gov/GAOLVR/welcome.do#no-back-button'>
+                <span>GA Voter Registration</span>
+              </a>
+            </div>
+            <div>
+              <a href='https://act.myngp.com/Forms/-6565702230050011136'>
+                <span>Volunteer</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h2>About</h2>
+            <p>
+              This site was developed by volunteers. ATL 4 Fort is a group of activists, community organizers, and voters working towards progressive change that benefits all people of Atlanta
+            </p>
+          </li>
         </ul>
       </footer>
     );

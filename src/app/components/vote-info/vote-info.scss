@@ -38,6 +38,10 @@
     padding-top: 40px;
     text-align: center;
 
+    @include mobile {
+      font-size: 28px;
+    }
+
     i {
       color: $red;
       font-weight: 400;

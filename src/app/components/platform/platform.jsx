@@ -14,19 +14,11 @@ export class Platform extends Component {
   render() {
     return (
       <div className={styles.platform}>
-        <h2>On The Issues</h2>
+        <h2>Senator Fort Stands for:</h2>
         <ul>
           <li>
             <i className='fa fa-check-square-o'></i>
-            Fair and affordable housing
-          </li>
-          <li>
-            <i className='fa fa-check-square-o'></i>
-            Free two year college for high school graduates
-          </li>
-          <li>
-            <i className='fa fa-check-square-o'></i>
-            Decriminalization of marijuana inside the city of ATL
+            Prioritizing fair and affordable housing
           </li>
           <li>
             <i className='fa fa-check-square-o'></i>
@@ -34,23 +26,31 @@ export class Platform extends Component {
           </li>
           <li>
             <i className='fa fa-check-square-o'></i>
-            Environmental justice
+            Decriminalizing cannabis inside the city of Atlanta
           </li>
           <li>
             <i className='fa fa-check-square-o'></i>
-            Equality for all
+            Keeping police accountable
           </li>
           <li>
             <i className='fa fa-check-square-o'></i>
-            Police accountability
+            Establishing free two year college for Atlanta high school graduates
           </li>
           <li>
             <i className='fa fa-check-square-o'></i>
-            Stop corporate takeover of community schools
+            Prioritizing environmental justice
           </li>
           <li>
             <i className='fa fa-check-square-o'></i>
-            Investment in the arts
+            Protecting equality for all people
+          </li>
+          <li>
+            <i className='fa fa-check-square-o'></i>
+            Ending corporate takeovers of community schools
+          </li>
+          <li>
+            <i className='fa fa-check-square-o'></i>
+            Investing in the arts
           </li>
         </ul>
       </div>
