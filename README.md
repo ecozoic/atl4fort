@@ -1,6 +1,6 @@
 # atl4fort
 
-This project is a scaffold to start new react+redux projects powered by Webpack.
+A website made by volunteers supporting Vincent Fort for Atlanta Mayor 2017.
 
 ## Installation
 ```

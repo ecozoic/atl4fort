@@ -1,7 +1,7 @@
 {
   "name": "atl4fort",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "A website made by volunteers supporting Vincent Fort for Atlanta Mayor 2017",
   "scripts": {
     "pretest": "npm run clean:test",
     "test": "cross-env NODE_ENV=test jest --config jest.conf.json",
@@ -32,6 +32,7 @@
     "url": "https://github.com/ecozoic/atl4fort/issues"
   },
   "homepage": "https://github.com/ecozoic/atl4fort#readme",
+  "private": true,
   "devDependencies": {
     "babel-core": "6.18.2",
     "babel-eslint": "7.1.1",
