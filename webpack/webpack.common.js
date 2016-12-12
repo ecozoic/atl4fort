@@ -21,6 +21,10 @@ module.exports = {
         use: 'babel-loader?cacheDirectory'
       },
       {
+        test: /\.html$/,
+        use: 'html-loader?interpolate'
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)$/,
         use: 'file-loader?name=assets/images/[name].[hash].[ext]'
       },
