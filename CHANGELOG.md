@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.1.1] - 2016-12-11
+### Changed
+- Updated favicon to ATL 4 Fort logo
+
 ## [1.1.0] - 2016-12-11
 ### Added
 - Added meta tags for Twitter cards and Facebook Open Graph
