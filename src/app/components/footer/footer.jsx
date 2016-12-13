@@ -59,11 +59,16 @@ export class Footer extends Component {
                 <span>Volunteer</span>
               </a>
             </div>
+            <div>
+              <a href='https://secure.actblue.com/contribute/page/vincentfort'>
+                <span>Donate</span>
+              </a>
+            </div>
           </li>
           <li>
             <h2>About</h2>
             <p>
-              This site was developed by volunteers. ATL 4 Fort is a group of activists, community organizers, and voters working towards progressive change that benefits all people of Atlanta
+              This site was developed by volunteers. ATL 4 Fort is a group of activists, community organizers, and voters working towards progressive change that benefits all people of Atlanta. Join us in supporting Vincent Fort for Atlanta Mayor in 2017!
             </p>
           </li>
         </ul>

@@ -34,11 +34,15 @@ export class VoteInfo extends Component {
           </table>
         </div>
         <div className={styles.buttons}>
+          <a href='https://secure.actblue.com/contribute/page/vincentfort' className={styles.button} target='_blank'>
+            <i className='fa fa-usd'></i>
+            Donate!
+          </a>
           <a href='https://registertovote.sos.ga.gov/GAOLVR/welcome.do#no-back-button' className={styles.button} target='_blank'>
             <i className='fa fa-thumbs-o-up'></i>
             Register to Vote!
           </a>
-          <a href='https://act.myngp.com/Forms/-6565702230050011136' className={styles.button} target='blank'>
+          <a href='https://act.myngp.com/Forms/-6565702230050011136' className={styles.button} target='_blank'>
             <i className='fa fa-smile-o'></i>
             Volunteer!
           </a>
