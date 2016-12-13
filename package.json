@@ -1,6 +1,6 @@
 {
   "name": "atl4fort",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A website made by volunteers supporting Vincent Fort for Atlanta Mayor 2017",
   "scripts": {
     "pretest": "npm run clean:test",
