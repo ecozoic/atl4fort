@@ -9,6 +9,7 @@ import { Hero } from '../hero';
 import { Platform } from '../platform';
 import { Bio } from '../bio';
 import { VoteInfo } from '../vote-info';
+import { About } from '../about';
 
 /**
  * Home page component.
@@ -24,6 +25,7 @@ export class Home extends Component {
         <Header />
         <div className={styles.wrapper}>
           <Hero />
+          <About />
           <Platform />
           <Bio />
           <VoteInfo />
