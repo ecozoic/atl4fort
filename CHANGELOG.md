@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.2.2] - 2016-01-07
+### Added
+- Added About ATL4Fort section
+
+### Removed
+- Removed Github from the social links
+
 ## [1.2.1] - 2016-12-13
 ### Changed
 - No longer build on heroku dyno, version dist directory instead

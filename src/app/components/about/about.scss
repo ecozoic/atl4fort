@@ -1,0 +1,20 @@
+@import '../../../theme';
+@import '../../../mixins';
+
+.about {
+  @include page;
+  @include content;
+
+  min-height: auto;
+
+  h2 {
+    @include header;
+  }
+
+  p {
+    font-size: 24px;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 40px;
+  }
+}

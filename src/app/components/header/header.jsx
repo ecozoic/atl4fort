@@ -83,11 +83,6 @@ export class Header extends Component {
             <i className='fa fa-instagram'></i>
           </a>
         </Menu.Item>
-        <Menu.Item>
-          <a href='https://github.com/ecozoic/atl4fort'>
-            <i className='fa fa-github'></i>
-          </a>
-        </Menu.Item>
       </Menu>
     );
 

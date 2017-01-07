@@ -35,12 +35,6 @@ export class Footer extends Component {
                 <span>Instagram</span>
               </a>
             </div>
-            <div>
-              <a href='https://github.com/ecozoic/atl4fort'>
-                <i className='fa fa-github'></i>
-                <span>Github</span>
-              </a>
-            </div>
           </li>
           <li>
             <h2>Campaign</h2>
@@ -66,9 +60,9 @@ export class Footer extends Component {
             </div>
           </li>
           <li>
-            <h2>About</h2>
+            <h2>Website</h2>
             <p>
-              This site was developed by volunteers. ATL 4 Fort is a group of activists, community organizers, and voters working towards progressive change that benefits all people of Atlanta. Join us in supporting Vincent Fort for Atlanta Mayor in 2017!
+              <a href='https://github.com/ecozoic/atl4fort'>ecozoic</a>
             </p>
           </li>
         </ul>
