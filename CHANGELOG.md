@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.3.2] - 2016-01-19
+### Fixed
+- Build artifacts
+
 ## [1.3.1] - 2016-01-19
 ### Added
 - Added MARTA expansion to platform
