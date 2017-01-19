@@ -53,11 +53,11 @@ export class Footer extends Component {
                 <span>Volunteer</span>
               </a>
             </div>
-            <div>
+            {/*<div>
               <a href='https://secure.actblue.com/contribute/page/vincentfort'>
                 <span>Donate</span>
               </a>
-            </div>
+            </div>*/}
           </li>
           <li>
             <h2>Website</h2>

@@ -34,6 +34,10 @@ export class Platform extends Component {
           </li>
           <li>
             <i className='fa fa-check-square-o'></i>
+            Expanding MARTA
+          </li>
+          <li>
+            <i className='fa fa-check-square-o'></i>
             Establishing free two year college for Atlanta high school graduates
           </li>
           <li>

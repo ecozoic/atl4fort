@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.3.1] - 2016-01-19
+### Added
+- Added MARTA expansion to platform
+
+### Changed
+- Updated engine declarations in package.json
+- Updated node version in .nvmrc
+
+### Removed
+- Temporarily remove ActBlue donation links
+
 ## [1.3.0] - 2016-01-07
 ### Added
 - Added About ATL4Fort section
