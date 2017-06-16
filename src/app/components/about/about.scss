@@ -6,6 +6,7 @@
   @include content;
 
   min-height: auto;
+  padding-bottom: 80px;
 
   h2 {
     @include header;

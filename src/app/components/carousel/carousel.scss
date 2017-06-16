@@ -1,0 +1,37 @@
+@import '../../../theme';
+@import '../../../mixins';
+
+.carousel {
+  @include content;
+  background: $light-blue;
+
+  .container {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .dots {
+    bottom: 0;
+    color: $white;
+    z-index: 1000;
+
+    li {
+      button {
+        &::before {
+          color: $white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+:global(.slick-dots) {
+  :global(.slick-active) {
+    button {
+      &::before {
+        color: $blue !important;
+      }
+    }
+  }
+}

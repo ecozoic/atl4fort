@@ -32,7 +32,7 @@ module.exports = {
         test: /\.s?(a|c)ss$/,
         loader: extractApp.extract({
           fallbackLoader: 'style-loader',
-          loader: 'css-loader?importLoaders=2&minimize&modules&camelCase!postcss-loader!sass-loader'
+          loader: 'css-loader?importLoaders=2&minimize&modules&camelCase&localIdentName=[name]__[local]--[hash:base64:5]!postcss-loader!sass-loader'
         }),
         exclude: /node_modules/
       },

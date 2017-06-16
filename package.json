@@ -91,7 +91,8 @@
     "react": "15.4.1",
     "react-dom": "15.4.1",
     "react-intl": "2.1.5",
-    "react-router": "4.0.0-alpha.6"
+    "react-router": "4.0.0-alpha.6",
+    "react-slick": "0.14.11"
   },
   "engines": {
     "node": "6.9.3",

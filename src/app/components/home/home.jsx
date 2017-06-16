@@ -10,6 +10,7 @@ import { Platform } from '../platform';
 import { Bio } from '../bio';
 import { VoteInfo } from '../vote-info';
 import { About } from '../about';
+import { Carousel } from '../carousel';
 
 /**
  * Home page component.
@@ -26,6 +27,7 @@ export class Home extends Component {
         <div className={styles.wrapper}>
           <Hero />
           <About />
+          <Carousel />
           <Platform />
           <Bio />
           <VoteInfo />
